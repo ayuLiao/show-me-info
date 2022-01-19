@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>二两的简历</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/typo.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script>
+        function loading() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="header"></header>
+
+    <article class="container">
+        <section class="side" id="side">
+
+            <!-- 左栏固定开关，记得及时删除这段代码 Start-->
+            <label class="switch" style="display: none;" onchange="switchFixed()">
+                <script type="text/javaScript">
+                    function switchFixed(){
+                        var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
+                        document.getElementById('side').style.position = value;
+                    }
+                </script>
+            </label>
+            <style>
+                @media (min-width: 	750px){
+                    .switch{position:relative;display:inline-block!important;width:60px;height:34px;}
+                    .switch input{display:none;}
+                    .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;-webkit-transition:.4s;transition:.4s;}
+                    .slider:before{position:absolute;content:"";height:26px;width:26px;left:4px;bottom:4px;background-color:white;-webkit-transition:.4s;transition:.4s;}
+                    input:checked + .slider{background-color:#1abc9c;}
+                    input:focus + .slider{box-shadow:0 0 1px #1abc9c;}
+                    input:checked + .slider:before{-webkit-transform:translateX(26px);-ms-transform:translateX(26px);transform:translateX(26px);}.slider.round{border-radius:34px;}
+                    .slider.round:before{border-radius:50%;}
+                }
+            </style>
+            <!-- 左侧固定开关，记得及时删除这段代码 End-->
+
+            <!-- 个人肖像 -->
+            <section class="me">
+               
+                <img class="portrait" src="assets/images/avatar.jpg" >
+                <h1 class="name">廖茂文（二两）</h1>
+                <h4 class="info-job">算法工程师 / 广州</h4>
+
+            </section>
+
+            <!-- 基本信息 -->
+            <section class="profile info-unit">
+                <h2>
+                    <i class="fa fa-user" aria-hidden="true"></i>基本信息</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>个人信息</label>
+                        <span>廖茂文 / 男 / 26岁</span>
+                    </li>
+                    
+                    <li>中国人工智能学会高级会员、算法工程师、技术讲师、个人高客单价训练营讲师；</li>
+                    <li>在阿里云大学、CSDN、极客学院开设Python自动化办公、Python入门、人工智能入门等相关课程，付费学员超2万人；</li>
+                    <li>图书《深入浅出生成对抗网络》和《Python自动化办公》作者。</li>
+                 
+                </ul>
+            </section>
+
+            <!-- 联系方式 -->
+            <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-phone" aria-hidden="true"></i>联系方式</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>手机</label>
+                        <a href="tel:15168285219" target="_blank">132-2948-3208</a>
+                    </li>
+                    <li>
+                        <label>微信</label>
+                        <a>twotwo202101</a>
+                    </li>
+                    <li>
+                        <label>公众号</label>
+                        <a>懒编程</a>
+                    </li>
+                    <li>
+                        <label>Github</label>
+                        <a href="https://github.com/ayuliao" target="_blank">github.com/ayuliao</a>
+                    </li>
+                    <li>
+                        <label></label>
+                        <a href="https://gitee.com/ayuLiao" target="_blank">gitee.com/ayuLiao</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 技能点 -->
+            <section class="skill info-unit">
+                <h2>
+                    <i class="fa fa-code" aria-hidden="true"></i>技能点</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>Python</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>JavaScript</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>机器学习</label>
+                        <progress value="60" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>区块链</label>
+                        <progress value="55" max="100"></progress>
+                    </li>
+                   
+                </ul>
+            </section>
+
+            
+
+            <!-- 技术栈 -->
+            <div class="stack info-unit">
+                    <h2><i class="fa fa-code" aria-hidden="true"></i>其他</h2>
+                    <hr/>
+                    <ul>
+                        <li>
+                            <label>前端</label>
+                            <span>React、VueJS、JQuery、Electron、Bootstrap、SASS</span>
+                        </li>
+                        <li>
+                            <label>后端</label>
+                            <span>Python、Node.js、MySQL、Redis、MongoDB、Docker</span>
+                        </li>
+                        <li>
+                            <label>其他</label>
+                            <span>爬虫、机器学习、深度学习、区块链、网络工程、Git、SVN、Markdown</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- <section class="qrcode info-unit">
+                    <h2><i class="fa fa-qrcode" aria-hidden="true"></i>二维码</h2>
+                    <hr/>
+                    <img src="https://github.com/if2er/FeZaoDuKe-Collection/blob/master/ifeees.jpg?raw=true" style="width: 100%;" alt="">
+                </section> -->
+        </section>
+
+        <section class="main">
+
+            <!-- 教育经历 -->
+            <section class="edu info-unit">
+                <h2>
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>教育经历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>中山大学新华学员 - 软件工程专业</span>
+                            <time>2014.9-2018.7</time>
+                        </h3>
+                        <p>在校期间参与蓝桥杯、全国数学建模、思科网院杯、各地创业比赛等，均获得名次，在校发表电商推荐系统相关的论文</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 工作经历 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>工作经历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[经历1]广州微宽量化 - 后端与量化策略开发</span>
+                            <time>2017.9-2020.1</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>负责实现策略师的量化策略，使用ML相关的技术，对A股市场进行技术分析，日常阅读相关技术论文</li>
+                            <li>负责公司策略售卖微信商城的后端开发，使用Django框架进行开发，独自完成微信商城后端所有核心功能，因为是策略是虚拟商品，所以没有库存管理模块，商城整体较为简单，没有遇到特别的困难</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[经历2]广州省省回头车 - 后端开发</span>
+                            <time>2020.2-2021.1</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>公司项目采用微服务的形式组成，本人深度参与公司补贴服务与优惠券服务的开发，因为公司用户体量在200w左右，用车高峰期会有一些技术挑战，使用Kafka+redis实现削峰填谷，使用二进制的与或运算快速计算出需要发优惠券的用户</li>
+                            <li>负责公司零担相关的设计与开发，零担是货物的拼车，具有一定的业务复杂度，与其他两位同事配合开发，完成了零担项目的开发与上线，技术上挑战较小（复用此前搭建好的技术架构），主要是团队开发进度的把控。</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[经历3]贪玩游戏 - 算法工程师</span>
+                            <time>2021.2-至今</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>负责公司DSP智能投放部分的业务算法开发，需要试验各种算法的具体效果，具有一定的挑战</li>
+                            <li>开发视频结构化系统，将视频内容通过其口播文字进行识别、分词、运算处理，实现视频内容相似度的计算</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 项目经验 -->
+            <section class="project info-unit">
+                <h2>
+                    <i class="fa fa-terminal" aria-hidden="true"></i>业余实践</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[书籍1]《Python自动化办公》</span>
+                            <span class="link">
+                                <a href="https://item.m.jd.com/product/12872515.html" target="_blank">购买</a>
+                            </span>
+                        </h3>
+                        <ul class="info-content">
+                            <li>
+                                利用Python对需重复处理的办公场景进行自动化处理
+                                
+                            </li>
+                            <li>[成就]被贵州某大学选择为自动化办公的教材，书籍售卖数量可观</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[书籍2]《深入浅出GAN深度对抗网络》</span>
+                            <span class="link">
+                                <a href="https://item.m.jd.com/product/12670539.html" target="_blank">购买</a>
+                            </span>
+                        </h3>
+                        <ul class="info-content">
+                            <li>
+                                国内较为系统的介绍了生成对抗网络的书籍，包括其数学原理的推导、算法的实现和模型效果的分析
+                            </li>
+                            <li>[成就]国内GAN相关书籍中内容Top3，从数学原理到代码实现都有介绍</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目1]抖直播</span>
+                            <span class="link">
+                                <a href="https://mp.weixin.qq.com/s/N0dvbRRYEuSJuErIKsFbZg" target="_blank">复盘文章</a>
+                            </span>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：NodeJS+Electron+VueJS+爬虫</li>
+                            <li>[目标]实现抖音直播的实时抓取，方便软件使用者，进行竞品分析</li>
+                            <li>[成就]可以同时获取多个主播的直播视频。</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目2]爬虫练习靶场</span>
+                            <span class="link">
+                                <a href="http://47.103.13.124:8001/login" target="_blank">靶场网站</a>
+                            </span>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：VueJS+Python</li>
+                            <li>[目标]作为高客单价爬虫训练营附赠的练习平台，便于学员练习各种反爬技术</li>
+                            <li>[成就]实现包括常见反爬、前端反爬、浏览器反爬、JS混淆、验证码反爬等多种反爬案例</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目3]GameFi练习靶场</span>
+                            <span class="link">
+                                <a href="#" target="_blank">暂未上线</a>
+                            </span>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：Solidity+VueJS</li>
+                            <li>[目标]模仿扳手腕，制作了投筛子的GameFi仿盘网站，网站中，复现了相关的合约漏洞，目前用于开设科学家训练营</li>
+                            <li>[成就]已上线测试网络，跑通整个流程，但科学家训练营因为售价和流量的问题，暂无继续推进</li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </section>
+
+            <!-- 自我评价 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>自我评价</h2>
+                <hr/>
+                <p>比较自律，每日都会写一篇当天工作的记录与总结反思，热爱分享，有自己的技术公众号：<strong>懒编程</strong>，至少一周一篇文章，热爱数学和技术挑战，喜欢编程带来的创造感，因为简历篇幅有限，可以看我的Github与Gitee，至少还有<strong>15个项目</strong>，没有介绍。
+                </p>
+            </section>
+        </section>
+    </article>
+
+
+
+    <footer class="footer">
+        <p>© 2022 二两</p>
+    </footer>
+
+    <!-- 侧栏 -->
+    <!-- <aside>
+        <ul>
+            <li>
+                <a href="https://gitee.com/itsay/resume" target="_blank">源代码</a>
+            </li>
+            <li>
+                <a href="http://if2er.com/" target="_blank">Blog</a>
+            </li>
+        </ul>
+    </aside> -->
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
